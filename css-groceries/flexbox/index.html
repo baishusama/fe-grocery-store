@@ -1,0 +1,171 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="ie=edge"
+        >
+        <title>Flexbox DEMO</title>
+        <!-- <link rel="stylesheet" href="./dist/bundle.css"> -->
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            h1 {
+                padding: 0.5rem 1rem ;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .alert {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                word-wrap: break-word;
+                contain: strict; /* ??? */
+            }
+
+            .backdrop {
+                opacity: .5;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                word-wrap: break-word;
+                transform: translateZ(0);
+            }
+
+            .alert-wrapper {
+                display: flex;
+                flex-direction: column;
+                opacity: 1;
+                z-index: 10;
+                border-radius: 2px;
+                max-width: 280px;
+                min-width: 250px;
+                max-height: 90%;
+                background-color: #fafafa;
+                box-shadow: 0 16px 20px rgba(0,0,0,.4);
+                transform: scale(1);
+                contain: content; /* ??? */
+            }
+
+            .alert-header {
+                padding: 24px 24px 20px;
+            }
+            .alert-message {
+                overflow-y: scroll;
+                padding: 0 24px 24px 24px;
+                max-height: 240px;
+                color: rgba(0,0,0,.5);
+                font-size: 15px;
+            }
+
+            .alert-button-group {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap-reverse;
+                justify-content: flex-end;
+                padding: 8px 8px 8px 24px;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+            .alert-button-group button {
+                overflow: hidden;
+                position: relative;
+                display: block;
+                align-items: flex-start;
+                border: none;
+                padding: 10px;
+                background-color: transparent;
+                line-height: 20px;
+                /* writing-mode: horizontal-tb; */
+            }
+            .alert-button-group button span{
+                display: flex;
+                /* justify-content: flex-end; */
+                flex-direction: row;
+                flex-shrink: 0;
+                flex-wrap: nowrap;
+                align-items: center;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox DEMO</h1>
+
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </li>
+            <li>
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </li>
+            <li>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </li>
+            <li>
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            </li>
+            <li>
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+            </li>
+            <li>
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            </li>
+            <li>
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+            </li>
+            <li>
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+            </li>
+            <li>
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+            </li>
+            <li>
+                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+            </li>
+        </ul>
+
+        <div class="alert">
+            <div class="backdrop"></div>
+            <div class="alert-wrapper">
+                <div class="alert-header">应用提示</div>
+                <div class="alert-message">确认退出？</div>
+                <div class="alert-button-group">
+                    <button>
+                        <span>取消</span>
+                    </button>
+                    <button>
+                        <span>确定</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="./dist/bundle.js"></script> -->
+    </body>
+</html>
