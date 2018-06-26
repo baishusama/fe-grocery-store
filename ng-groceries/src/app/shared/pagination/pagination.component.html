@@ -1,0 +1,25 @@
+<ul class="pagination">
+    <!-- <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>
+        <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li>
+        <li class="footable-page active"><a data-page="0" href="#">1</a></li>
+        <li class="footable-page"><a data-page="1" href="#">2</a></li>
+        <li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li>
+        <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li> -->
+    <li
+        *ngFor="let nav of pageNavDataList"
+        [ngClass]="{
+                'active': nav.isCurrent,
+                'disabled': nav.isDisabled
+            }"
+    >
+        <a (click)="navigateToPage(nav.value)">{{ nav.display }}</a>
+
+        <!-- <span *ngIf="nav.type === 'number' || nav.type === 'button'; else placeholder">
+                <a (click)="navigateToPage(nav.value)">{{ nav.display }}</a>
+            </span>
+    
+            <ng-template #placeholder>
+                <span>{{ nav.display }}</span>
+            </ng-template> -->
+    </li>
+</ul>
