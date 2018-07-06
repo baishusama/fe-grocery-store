@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        >
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta
+            name="description"
+            content="极客理财师 Admin Skeleton"
+        >
+        <meta
+            name="author"
+            content="baishusama @ 极客理财师互联网团队"
+        >
+
+        <title>极客理财师 Admin Skeleton</title>
+        <!-- inject:css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/angularjs-toaster/toaster.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+        <link rel="stylesheet" href="node_modules/angular-simple-sidebar/angular-simple-sidebar.min.css">
+        <link rel="stylesheet" href="node_modules/angular-simple-sidebar/angular-simple-sidebar-black-theme.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-fileinput/css/fileinput.min.css">
+        <link rel="stylesheet" href="node_modules/angular-hotkeys/build/hotkeys.min.css">
+        <link rel="stylesheet" href="node_modules/jointjs/dist/joint.min.css">
+        <link rel="stylesheet" href="node_modules/ng-json-edit/css/styles.css">
+        <!-- above is lib; below is src -->
+        <link rel="stylesheet" href="source/lib/css/style.css">
+        <!-- <link rel="stylesheet" href="source/lib/css/awesome-bootstrap-checkbox.css"> -->
+        <link rel="stylesheet" href="source/buttons/buttons.css">
+        <!-- endinject -->
+
+        <!-- inject:js -->
+        <!-- <script src="https://unpkg.com/rxjs@6.0.0-uncanny-rc.7/bundles/rxjs.umd.min.js"></script> -->
+        <script src="node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/select2/dist/js/select2.full.js"></script>
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+        <script src="node_modules/@uirouter/core/_bundles/ui-router-core.js"></script>
+        <script src="node_modules/@uirouter/angularjs/release/ui-router-angularjs.js"></script>
+        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        <!-- Date Range Picker -->
+        <script src="node_modules/moment/moment.js"></script>
+        <script src="node_modules/moment/min/moment-with-locales.js"></script>
+        <script src="node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="node_modules/bootstrap-fileinput/js/fileinput.js"></script>
+
+        <!-- Other components -->
+        <script src="node_modules/spin.js/spin.js"></script>
+        <script src="node_modules/angular-spinner/angular-spinner.js"></script>
+        <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+        <script src="node_modules/ui-select/dist/select.js"></script>
+        <script src="node_modules/angularjs-toaster/toaster.js"></script>
+        <script src="node_modules/angular-hotkeys/build/hotkeys.js"></script>
+        <script src="node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+        <script src="node_modules/angular-simple-sidebar/angular-simple-sidebar.min.js"></script>
+
+        <!-- JSONedit -->
+        <script src="node_modules/jquery-ui/ui/widget.js"></script>
+        <!-- JSONedit dependencies -->
+        <script src="node_modules/angular-ui-sortable/src/sortable.js"></script>
+        <!-- JSONedit dependencies -->
+        <script src="node_modules/ng-json-edit/js/directives.js"></script>
+
+        <script src="node_modules/ngstorage/ngStorage.js"></script>
+
+        <!-- jointjs -->
+        <script src="node_modules/lodash/index.js"></script>
+        <script src="node_modules/backbone/backbone.js"></script>
+        <script src="node_modules/jointjs/dist/joint.js"></script>
+
+        <!-- Project Codes -->
+        <!-- <script src="source/lib/js/config.js"></script>
+        <script src="source/lib/js/commonService.js"></script>
+        <script src="source/lib/js/apiService.js"></script>
+        <script src="source/lib/js/directives.js"></script> -->
+        <!-- Shared Module -->
+        <!-- <script src="source/shared/shared.module.js"></script>
+        <script src="source/shared/date-range-picker/date-range-picker.directive.js"></script> -->
+
+        <!-- Buttons -->
+        <!-- <script src="source/buttons/services.js"></script> -->
+        <script src="source/buttons/loading-button/loading-button.page.js"></script>
+
+        <!-- App -->
+        <script src="app.js"></script>
+        <script src="app-routing.js"></script>
+        <!-- <script src="conflict.interceptor.js"></script> -->
+        <!-- <script src="bootstrap.js"></script> -->
+        <!-- endinject -->
+    </head>
+    <body ng-app="gfAsk">
+        <!-- ng-controller="admin.controller" -->
+        <div
+            ui-view
+            name="mainOutlet"
+            class="container-fluid"
+        >
+        </div>
+    </body>
+</html>
