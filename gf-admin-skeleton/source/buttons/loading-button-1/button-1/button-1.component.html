@@ -1,0 +1,12 @@
+<button
+    ng-click="$ctrl.sendInfo()"
+    ng-disabled="$ctrl.isLoading"
+    ng-class="$ctrl.buttonStyleList[$ctrl.index]"
+    class="btn"
+>
+    <i
+        ng-show="$ctrl.isLoading"
+        class="fa fa-spinner rotating"
+    ></i>
+    #{{$ctrl.index}} （•̀ᴗ•́）و　̑̑
+</button>

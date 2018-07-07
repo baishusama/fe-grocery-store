@@ -3,3 +3,40 @@ body {
     margin: 0;
     padding: 0;
 }
+
+[name='mainOutlet'] {
+    padding: 1rem;
+}
+
+/* Navbar */
+.gfask-navbar {
+    padding: 1rem;
+    background-color: #1976d2;
+}
+.gfask-navbar ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gfask-navbar ul li {
+    float: left;
+    margin-right: 1rem;
+}
+.gfask-navbar ul li:first-child {
+    padding: 6px 12px;
+}
+.gfask-navbar ul li .btn {
+    color: #fff;
+}
+
+/* loading 效果 */
+.rotating {
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,18 @@
+<h2>Loading Button 1 - UI 和业务逻辑分离</h2>
+
+<div class="wrapper">
+    <button-1
+        index="1"
+        on-button-clicked="$ctrl.appendToInfoList(info, callback)"
+    ></button-1>
+    <button-1
+        index="2"
+        on-button-clicked="$ctrl.appendToInfoList(info, callback)"
+    ></button-1>
+</div>
+
+<div class="wrapper info-board">
+    <!-- ImoNote: 因为 info 极有可能一样，所以这里为了避免下述报错使用 `track by $index`： -->
+    <!-- Error: [ngRepeat:dupes] Duplicates in a repeater are not allowed. Use 'track by' expression to specify unique keys. -->
+    <p ng-repeat="info in $ctrl.infoList track by $index">{{ info }}</p>
+</div>

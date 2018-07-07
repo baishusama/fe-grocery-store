@@ -1,4 +1,4 @@
-var modules = ['gfAsk.buttons'];
+var modules = ['gfAsk.core', 'gfAsk.buttons'];
 
 var thirdModules = [
     'ui.router',

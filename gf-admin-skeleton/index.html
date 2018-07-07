@@ -35,7 +35,8 @@
         <link rel="stylesheet" href="source/app.css">
         <!-- <link rel="stylesheet" href="source/lib/css/style.css"> -->
         <!-- <link rel="stylesheet" href="source/lib/css/awesome-bootstrap-checkbox.css"> -->
-        <link rel="stylesheet" href="source/buttons/loading-button/loading-button.page.css">
+        <link rel="stylesheet" href="source/buttons/loading-button-0/loading-button-0.component.css">
+        <link rel="stylesheet" href="source/buttons/loading-button-1/loading-button-1.component.css">
         <!-- endinject -->
 
         <!-- inject:js -->
@@ -90,9 +91,16 @@
         <!-- <script src="source/shared/shared.module.js"></script>
         <script src="source/shared/date-range-picker/date-range-picker.directive.js"></script> -->
 
+        <!-- Core -->
+        <script src="source/core/core.module.js"></script>
+        <script src="source/core/datetime.service.js"></script>
+
         <!-- Buttons -->
         <script src="source/buttons/buttons.module.js"></script>
-        <script src="source/buttons/loading-button/loading-button.page.js"></script>
+        <script src="source/buttons/buttons.component.js"></script>
+        <script src="source/buttons/loading-button-0/loading-button-0.component.js"></script>
+        <script src="source/buttons/loading-button-1/loading-button-1.component.js"></script>
+        <script src="source/buttons/loading-button-1/button-1/button-1.component.js"></script>
 
         <!-- App -->
         <script src="source/app.js"></script>
@@ -103,6 +111,28 @@
     </head>
     <body ng-app="gfAsk">
         <!-- ng-controller="admin.controller" -->
+        <!-- Navbar -->
+        <div class="gfask-navbar">
+            <ul>
+                <li>Go to:</li>
+                <li>
+                    <a
+                        ui-sref="loadingButton.detail0"
+                        class="btn"
+                    >
+                        Loading Button 0
+                    </a>
+                </li>
+                <li>
+                    <a
+                        ui-sref="loadingButton.detail1"
+                        class="btn"
+                    >
+                        Loading Button 1
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div
             ui-view
             name="mainOutlet"

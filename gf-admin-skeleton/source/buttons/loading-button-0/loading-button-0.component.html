@@ -1,3 +1,5 @@
+<h2>Loading Button 0 - UI 和业务逻辑混杂</h2>
+
 <div class="wrapper">
     <button
         ng-click="$ctrl.fetchInfo(1)"
@@ -6,7 +8,7 @@
     >
         <i
             ng-show="$ctrl.fetchInfo.isLoadingSet[1]"
-            class="fa fa-spinner"
+            class="fa fa-spinner rotating"
         ></i>
         #1 （•̀ᴗ•́）و　̑̑
     </button>
@@ -17,12 +19,12 @@
     >
         <i
             ng-show="$ctrl.fetchInfo.isLoadingSet[2]"
-            class="fa fa-spinner"
+            class="fa fa-spinner rotating"
         ></i>
         #2 （•̀ᴗ•́）و　̑̑
     </button>
 </div>
 
 <div class="wrapper info-board">
-    <p ng-repeat="info in $ctrl.infoList">{{ info }}</p>
+    <p ng-repeat="info in $ctrl.infoList track by $index">{{ info }}</p>
 </div>
