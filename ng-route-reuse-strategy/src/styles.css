@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Normalize */
+
+html,
+body {
+  margin: 0;
+}
+
+/* main */
+
+main {
+  border: 1px dashed #555;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* nav */
+
+nav {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* .navi */
+
+.navi ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.navi ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+.navi li a {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: hotpink;
+  color: white;
+  text-decoration: none;
+}
