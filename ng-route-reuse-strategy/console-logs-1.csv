@@ -1,0 +1,4 @@
+信息,说明
+`shouldReuseRoute`: url-0 true,【不知道为何】只有一次根路由的判断
+(`retrieve`: undefined) x 5,因此导致所有子路由都做了读取缓存的尝试
+(`shouldAttach`: false) x 2,两个组件都尚无缓存

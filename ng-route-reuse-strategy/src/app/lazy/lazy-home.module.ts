@@ -11,11 +11,13 @@ const routes: Routes = [
     children: [
       {
         path: 'home-sub1',
-        loadChildren: './lazy-home-sub1.module#LazyHomeSub1Module'
+        loadChildren: './lazy-home-sub1.module#LazyHomeSub1Module',
+        data: { module: 'LazyHomeSub1Module' }
       },
       {
         path: 'home-sub2',
-        loadChildren: './lazy-home-sub2.module#LazyHomeSub2Module'
+        loadChildren: './lazy-home-sub2.module#LazyHomeSub2Module',
+        data: { module: 'LazyHomeSub2Module' }
       }
     ]
   }
