@@ -25,6 +25,7 @@
     "@angular/router": "^6.0.3",
     "add": "^2.0.6",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
     "ng": "0.0.0-rc6",
     "ng-zorro-antd": "^1.1.0",
     "rxjs": "^6.0.0",

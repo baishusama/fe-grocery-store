@@ -1,0 +1,18 @@
+.backBtn {
+  $size: 30px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hotpink;
+  border-radius: $size / 2;
+  width: $size;
+  height: $size;
+  background-color: hotpink;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
