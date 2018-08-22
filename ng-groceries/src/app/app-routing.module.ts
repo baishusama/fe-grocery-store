@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'page',
     // TODO: 每个懒加载的模块都可以加一个 canload guard
     // canLoad: [AuthGuardService],
-    loadChildren: './pages/pages.module#PagesModule' // TODO: 这里只能用相对路径了么？？？
+    loadChildren: './pages/pages.module#PagesModule'
   }
   // {
   //     path: 'login',

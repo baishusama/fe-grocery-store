@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 /* 3rd Part */
 import { NgZorroAntdModule } from 'ng-zorro-antd';
@@ -10,16 +11,31 @@ import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 // Components
 import { AppComponent } from './app.component';
+// Interceptors
+import { I1 } from './pages/custom-middleware-chain/interceptors';
+import { I2 } from './pages/custom-middleware-chain/interceptors';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     CoreModule,
+    HttpClientModule,
     NgZorroAntdModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: I1,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: I2,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

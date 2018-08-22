@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
 import { PaginationDjComponent } from './pagination-dj/pagination-dj.component';
+import { CustomMiddlewareChainComponent } from './custom-middleware-chain/custom-middleware-chain.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'pagination-dj',
         component: PaginationDjComponent
+      },
+      {
+        path: 'custom-middleware-chain',
+        component: CustomMiddlewareChainComponent
       }
     ]
   }
