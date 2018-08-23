@@ -41,12 +41,6 @@ import { I2 } from './pages/custom-middleware-chain/interceptors';
       useClass: I2,
       multi: true
     }
-    // FIXME:
-    // {
-    //   provide: HttpHandler,
-    //   useFactory: HttpInterceptingHandler,
-    //   deps: [HttpBackend, [new Optional(), new Inject(HTTP_INTERCEPTORS)]]
-    // }
   ],
   bootstrap: [AppComponent]
 })
