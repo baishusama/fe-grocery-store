@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, interval } from 'rxjs';
 import { map, startWith, takeUntil } from 'rxjs/operators';
+=======
+import { Component, OnInit } from '@angular/core';
+>>>>>>> 8a4672de657c4736e593bd102b14bd7578ae5209
 
 @Component({
   selector: 'app-take-until-page',
   templateUrl: './take-until-page.component.html',
   styleUrls: ['./take-until-page.component.scss']
 })
+<<<<<<< HEAD
 export class TakeUntilPageComponent implements OnInit, OnDestroy {
   interval$ = interval(1000).pipe(
     map(count => count + 1),
@@ -32,4 +37,13 @@ export class TakeUntilPageComponent implements OnInit, OnDestroy {
     this.destroySubject.next();
     this.destroySubject.complete();
   }
+=======
+export class TakeUntilPageComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 8a4672de657c4736e593bd102b14bd7578ae5209
 }
