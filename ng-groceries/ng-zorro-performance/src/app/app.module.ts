@@ -10,10 +10,13 @@ import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 
+import { SharedModule } from './shared/shared.module';
+
 import { NzSelectListComponent } from './nz-select-list/nz-select-list.component';
 import { NzSelectGridListComponent } from './nz-select-grid-list/nz-select-grid-list.component';
 import { SelectListComponent } from './select-list/select-list.component';
 import { HomeComponent } from './home/home.component';
+import { MatSelectListComponent } from './mat-select-list/mat-select-list.component';
 
 registerLocaleData(zh);
 
@@ -38,6 +41,10 @@ const routes: Routes = [
   {
     path: 'nz-select-grid-list',
     component: NzSelectGridListComponent
+  },
+  {
+    path: 'mat-select-list',
+    component: MatSelectListComponent
   }
 ];
 
@@ -47,7 +54,8 @@ const routes: Routes = [
     NzSelectListComponent,
     NzSelectGridListComponent,
     SelectListComponent,
-    HomeComponent
+    HomeComponent,
+    MatSelectListComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +63,8 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    SharedModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

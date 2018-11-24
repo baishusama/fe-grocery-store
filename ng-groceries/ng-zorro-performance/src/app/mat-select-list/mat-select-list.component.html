@@ -1,0 +1,25 @@
+<p>
+  mat-select-list works!
+</p>
+
+<ul>
+    <li *ngFor="let select of selects">
+        {{ select.groupName }}
+        <ul>
+            <li *ngFor="let member of select.members">
+                <mat-select
+                    style="width: 200px;"
+                    [value]="member.choices[0].id"
+                >
+                    <mat-option
+                        *ngFor="let choice of member.choices"
+                        [value]="choice.id"
+                    >
+                        {{ choice.display }}
+                    </mat-option>
+                </mat-select>
+            </li>
+        </ul>
+    </li>
+</ul>
+
