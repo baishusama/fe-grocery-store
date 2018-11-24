@@ -121,88 +121,88 @@ module.exports = [
       'transport',
       'dataUri'
     ]
+  },
+  {
+    groupName: 'internet',
+    memberNames: [
+      'avatar',
+      'email',
+      'exampleEmail',
+      'userName',
+      'protocol',
+      'url',
+      'domainName',
+      'domainSuffix',
+      'domainWord',
+      'ip',
+      'ipv6',
+      'userAgent',
+      'color',
+      'mac',
+      'password'
+    ]
+  },
+  {
+    groupName: 'lorem',
+    memberNames: [
+      'word',
+      'words',
+      'sentence',
+      'slug',
+      'sentences',
+      'paragraph',
+      'paragraphs',
+      'text',
+      'lines'
+    ]
+  },
+  {
+    groupName: 'name',
+    memberNames: [
+      'firstName',
+      'lastName',
+      'findName',
+      'jobTitle',
+      'prefix',
+      'suffix',
+      'title',
+      'jobDescriptor',
+      'jobArea',
+      'jobType'
+    ]
+  },
+  {
+    groupName: 'phone',
+    memberNames: ['phoneNumber', 'phoneNumberFormat', 'phoneFormats']
+  },
+  {
+    groupName: 'random',
+    memberNames: [
+      'number',
+      'arrayElement',
+      'objectElement',
+      'uuid',
+      'boolean',
+      'word',
+      'words',
+      'image',
+      'locale',
+      'alphaNumeric'
+    ]
+  },
+  {
+    groupName: 'system',
+    memberNames: [
+      'fileName',
+      'commonFileName',
+      'mimeType',
+      'commonFileType',
+      'commonFileExt',
+      'fileType',
+      'fileExt',
+      'directoryPath',
+      'filePath',
+      'semver'
+    ]
   }
-  //   {
-  //     groupname: 'internet',
-  //     memberNames: [
-  //       'avatar',
-  //       'email',
-  //       'exampleEmail',
-  //       'userName',
-  //       'protocol',
-  //       'url',
-  //       'domainName',
-  //       'domainSuffix',
-  //       'domainWord',
-  //       'ip',
-  //       'ipv6',
-  //       'userAgent',
-  //       'color',
-  //       'mac',
-  //       'password'
-  //     ]
-  //   }
-  //   {
-  //     groupname: 'lorem',
-  //     memberNames: [
-  //       'word',
-  //       'words',
-  //       'sentence',
-  //       'slug',
-  //       'sentences',
-  //       'paragraph',
-  //       'paragraphs',
-  //       'text',
-  //       'lines'
-  //     ]
-  //   }
-  //   {
-  //     groupname: 'name',
-  //     memberNames: [
-  //       'firstName',
-  //       'lastName',
-  //       'findName',
-  //       'jobTitle',
-  //       'prefix',
-  //       'suffix',
-  //       'title',
-  //       'jobDescriptor',
-  //       'jobArea',
-  //       'jobType'
-  //     ]
-  //   }
-  //   {
-  //     groupname: 'phone',
-  //     memberNames: ['phoneNumber', 'phoneNumberFormat', 'phoneFormats']
-  //   }
-  //   {
-  //     groupname: 'random',
-  //     memberNames: [
-  //       'number',
-  //       'arrayElement',
-  //       'objectElement',
-  //       'uuid',
-  //       'boolean',
-  //       'word',
-  //       'words',
-  //       'image',
-  //       'locale',
-  //       'alphaNumeric'
-  //     ]
-  //   }
-  //   {
-  //     groupname: 'system',
-  //     memberNames: [
-  //       'fileName',
-  //       'commonFileName',
-  //       'mimeType',
-  //       'commonFileType',
-  //       'commonFileExt',
-  //       'fileType',
-  //       'fileExt',
-  //       'directoryPath',
-  //       'filePath',
-  //       'semver'
-  //     ]
-  //   }
 ];
