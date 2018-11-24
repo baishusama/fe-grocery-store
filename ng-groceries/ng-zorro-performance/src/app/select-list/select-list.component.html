@@ -1,0 +1,19 @@
+<p>select-list works!</p>
+
+<ul>
+    <li *ngFor="let select of selects">
+        {{ select.groupName }}
+        <ul>
+            <li *ngFor="let member of select.members">
+                <select>
+                    <option
+                        *ngFor="let choice of member.choices"
+                        [value]="choice.id"
+                    >
+                        {{ choice.display }}
+                    </option>
+                </select>
+            </li>
+        </ul>
+    </li>
+</ul>

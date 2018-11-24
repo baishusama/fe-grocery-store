@@ -1,0 +1,45 @@
+<p>nz-select-grid-list works!</p>
+
+<div
+    *ngFor="let select of selects"
+    nz-row
+    style="margin: 1rem 2rem; border: 1px dashed lightgray; border-radius: 2rem; padding: 2rem;"
+>
+    <nz-form-label
+        nz-col
+        nzSpan="2"
+    >
+        {{ select.groupName }}
+    </nz-form-label>
+
+    <div
+        nz-col
+        nzSpan="22"
+        nz-row
+    >
+        <ng-container *ngFor="let member of select.members">
+            <nz-form-label
+                nz-col
+                nzSpan="4"
+            >
+                {{ member.memberName }}
+            </nz-form-label>
+
+            <nz-form-control
+                nz-col
+                nzSpan="4"
+            >
+                <nz-select
+                    style="width: 100%;"
+                    [ngModel]="member.choices[0].id"
+                >
+                    <nz-option
+                        *ngFor="let choice of member.choices"
+                        [nzValue]="choice.id"
+                        [nzLabel]="choice.display"
+                    ></nz-option>
+                </nz-select>
+            </nz-form-control>
+        </ng-container>
+    </div>
+</div>

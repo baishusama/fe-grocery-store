@@ -1,0 +1,21 @@
+<p>nz-select-list works!</p>
+
+<ul>
+    <li *ngFor="let select of selects">
+        {{ select.groupName }}
+        <ul>
+            <li *ngFor="let member of select.members">
+                <nz-select
+                    style="width: 200px;"
+                    [ngModel]="member.choices[0].id"
+                >
+                    <nz-option
+                        *ngFor="let choice of member.choices"
+                        [nzValue]="choice.id"
+                        [nzLabel]="choice.display"
+                    ></nz-option>
+                </nz-select>
+            </li>
+        </ul>
+    </li>
+</ul>
