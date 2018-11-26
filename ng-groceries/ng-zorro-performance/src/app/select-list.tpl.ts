@@ -8,7 +8,7 @@ export abstract class SelectListTpl implements OnInit {
   constructor(protected dataService: DataService) {}
 
   ngOnInit() {
-    this.dataService.getStaticSelects().subscribe(selects => {
+    this.dataService.getStaticSelectsTimes10().subscribe(selects => {
       this.selects = selects;
     });
   }

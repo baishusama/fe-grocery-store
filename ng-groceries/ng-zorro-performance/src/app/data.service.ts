@@ -17,4 +17,11 @@ export class DataService {
   getStaticSelects(): Observable<Selects> {
     return of(GROUPS);
   }
+
+  getStaticSelectsTimes10(): Observable<Selects> {
+    const groupTimes10 = new Array(10)
+      .fill(GROUPS)
+      .reduce((acc, cur) => acc.concat(cur), []);
+    return of(groupTimes10);
+  }
 }
